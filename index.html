@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #00abb3;
+        font-family: "Inter", sans-serif;
+        letter-spacing: 0.2rem;
+        text-align: center;
+      }
+      .nav-head {
+        color: #5f9df7;
+        padding: 2rem;
+        background: black;
+        text-transform: uppercase;
+      }
+      .main {
+        color: white;
+      }
+      .bg-color {
+        background: black;
+      }
+      .bg {
+        text-transform: capitalize;
+      }
+
+      #btn {
+        color: white;
+        background-color: #083aa9;
+        text-transform: capitalize;
+        border: transparent;
+        border-radius: 24px;
+        margin: 2rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      #btn:hover {
+        transform: scale(1.1);
+        background-color: #5f9df7;
+      }
+    </style>
+    <title>Color Generator</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h2 class="nav-head">Color Generator</h2>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="bg-color">
+        <h1 class="bg">background : <span id="clr"></span></h1>
+        <button id="btn">click me</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
